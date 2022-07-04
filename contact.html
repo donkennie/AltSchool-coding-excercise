@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Let's catch up!</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name" >Name:</label>
+          <input type="text" id="name" name="Name" required placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="Email" required placeholder="Enter your email"/>
+        </div>
+        <div>
+          <label for="Message">Message:</label>
+          <input
+            class="Message"
+            type="text"
+            name="Message"
+            id=""
+            cols="47"
+            rows="9"
+            placeholder="Write it out"
+          ></input>
+          <br>
+        </div>
+        <div>
+            <label for="priority">Priority:</label>
+        <select name="devices">
+            <option value="one">(select one)</option>
+                <option value="one">Hangout</option>
+                <option value="two">Prayer</option>
+                <option value="three">Casual conversation</option>
+        </select>
+        </div>
+
+        <input class="btn" type="submit" value="submit" />
+      </form>
+
+      <ul id="users"></ul>
+    </section>
+  </body>
+</html>
